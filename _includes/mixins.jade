@@ -1,7 +1,7 @@
-mixin timeline-item(year, href, linktxt)
+mixin timeline-item(year, icon, href, linktxt)
     .timeline-item
         .timeline-icon
-            i.fa.fa-star.fa-fw
+            i.fa(class='fa-#{icon}')
         .timeline-content
             h2= year
             if block
