@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Responsive Timeline
+    meta(name='viewport', content='width=device-width, minimum-scale= 1.0, initial-scale= 1.0')
+    // stylesheets
+    link(rel='stylesheet', href='assets/css/style.css')
+  body
+  include ./_includes/mixins.jade 
+  header
+      .container
+        h1.logo
+          | Lois
+          span Jones
+        section.social
+          a.btn(href='http://www.github.com/brunodsgn') Github
+          a.btn(href='http://www.twitter.com/_brunoweb') Twitter
+    .container
+      h1.project-name RESPONSIVE TIMELINE
+      // Timeline begin here
+      #timeline
+        +timeline-item('1990', 'http://www.twitter.com/_brunoweb')
+          p 'Some Content on Content Here'
+        
+  footer
+      // Timeline ends here

@@ -1,0 +1,28 @@
+mixin timeline-item(year, href, linktxt)
+    .timeline-item
+        .timeline-icon
+            i.fa.fa-star.fa-fw
+        .timeline-content
+            h2= year
+            if block
+                block
+            else
+                p See Link for Addintional Information
+            if (linktxt)
+                a.btn(href="#{href}") #{linktxt}
+            else
+                a.btn(href="#{href}") Read More
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
