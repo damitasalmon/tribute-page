@@ -1,19 +1,20 @@
-.wrapper-for-content-outside-of-footer
-  footer.footer-2(role='contentinfo')
-    .footer-logo
-      img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png', alt='Logo image')
+footer.footer-2(role='contentinfo')
+  .footer-logo
+    img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png', alt='Logo image')
+  ul
+    li
+      a(href='#{about}') About
+    li
+      a(href='/credits.html') Credits
+  .footer-secondary-links
     ul
       li
-        a(href='#{about}') About
-    .footer-secondary-links
-      ul
-        li
-          a(href='javascript:void(0)') Copyright &copy; #{new Date().getFullYear()} 
-          a(href='https://www.freecodecamp.com/omgninjas') Sentimental Graffiti
-      ul.footer-social
-        li
-          a(href='javascript:void(0)')
-            i.fa.fa-twitter
-        li
-          a(href='javascript:void(0)')
-            i.fa.fa-fire
+        a(href='javascript:void(0)') Copyright &copy; #{new Date().getFullYear()} 
+        a(href='https://www.freecodecamp.com/omgninjas') Sentimental Graffiti
+    ul.footer-social
+      li
+        a(href='javascript:void(0)')
+          i.fa.fa-twitter
+      li
+        a(href='javascript:void(0)')
+          i.fa.fa-fire

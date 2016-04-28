@@ -1,43 +1,10 @@
-- website = 'http://www.loismailoujones.com/'
-- wiki = 'https://en.wikipedia.org/wiki/Lois_Mailou_Jones'
-- about = 'https://www.freecodecamp.com/challenges/build-a-tribute-page'
-- fname = 'Lois'
-- mname = 'Mailou' 
-- lname = 'Jones'
-
 doctype html
 html(lang='en')
   head
+    include ./_includes/vars.jade 
     meta(charset='UTF-8')
-    title Responsive Timeline
+    title #{fname} #{lname} #{title}
     meta(name='viewport', content='width=device-width, minimum-scale= 1.0, initial-scale= 1.0')
     // stylesheets
     link(rel='stylesheet', href='assets/css/style.css')
   body
-  include ./_includes/mixins.jade 
-  header
-    .container
-      h1.logo
-        span #{fname}
-        span #{mname}
-        span #{lname}
-      section.social
-        a.btn(href='#{website}') Website
-        a.btn(href='#{wiki}') Wikipedia Page
-        
-  .side-image
-    .images-wrapper
-    .side-image-content
-      h4 Topic Name
-      h1 Message with a gradient image
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
-      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
-  .container
-    h1.project-name RESPONSIVE TIMELINE
-    // Timeline begin here
-    #timeline
-      +timeline-item('1990', 'star', 'http://www.twitter.com/_brunoweb')
-        p 'Some Content on Content Here'
-      +timeline-item('1990', 'star', 'http://refills.bourbon.io/')
-        p 'Some Content on Content Here'
-  include ./_includes/footer.jade

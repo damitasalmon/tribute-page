@@ -1,28 +1,12 @@
-mixin timeline-item(year, icon, href, linktxt)
+mixin timeline-item(title, icon, href, linktxt)
     .timeline-item
         .timeline-icon
             i.fa(class='fa-#{icon}')
         .timeline-content
-            h2= year
+            h2= title
             if block
                 block
             else
                 p See Link for Addintional Information
             if (linktxt)
                 a.btn(href="#{href}") #{linktxt}
-            else
-                a.btn(href="#{href}") Read More
-                    
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
