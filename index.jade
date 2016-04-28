@@ -3,8 +3,28 @@ html(lang='en')
   head
     include ./_includes/vars.jade 
     meta(charset='UTF-8')
-    title #{fname} #{lname} #{title}
+    title #{names[0]} #{names[names.length]} #{title}
     meta(name='viewport', content='width=device-width, minimum-scale= 1.0, initial-scale= 1.0')
     // stylesheets
     link(rel='stylesheet', href='assets/css/style.css')
   body
+    include ./_includes/mixins.jade 
+    include ./_includes/header.jade 
+    .side-image
+      .images-wrapper
+      .side-image-content
+        h4 #{dates}
+        h1 #{tagline}
+    .container
+      #timeline
+        // Timeline begin here
+        include ./_includes/timeline.jade
+      // Timeline ends here
+    .hero
+      .hero-inner
+        .hero-copy
+          h1 The Hearing Eye
+          p Pure Eye Music
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/zIykwZt5LQE" frameborder="0" allowfullscreen)
+          blockquote.bq
+    include ./_includes/footer.jade
