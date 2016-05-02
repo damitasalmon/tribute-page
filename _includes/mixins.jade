@@ -1,7 +1,10 @@
 mixin timeline-item(title, icon, href, linktxt)
     .timeline-item
         .timeline-icon
-            i.fa(class='fa-#{icon}')
+            if icon
+                i.fa.fa-fw(class='fa-#{icon}')
+            else 
+                i.fa.fa-fw(class='fa-dot-circle-o')
         .timeline-content
             h2= title
             if block
@@ -9,4 +12,11 @@ mixin timeline-item(title, icon, href, linktxt)
             else
                 p See Link for Addintional Information
             if (linktxt)
-                a.btn(href="#{href}") #{linktxt}
+                a.btn(href="#{href}" target="_blank") #{linktxt}
+
+mixin copyr(whois, link)
+    p Copyright &copy; #{new Date().getFullYear()}&nbsp;
+        if link
+            a(href='#{link}') #{whois}
+        else
+            | #{whois}

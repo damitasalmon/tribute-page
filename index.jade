@@ -3,7 +3,7 @@ html(lang='en')
   head
     include ./_includes/vars.jade 
     meta(charset='UTF-8')
-    title #{names[0]} #{names[names.length]} #{title}
+    title #{shortname} #{title}
     meta(name='viewport', content='width=device-width, minimum-scale= 1.0, initial-scale= 1.0')
     // stylesheets
     link(rel='stylesheet', href='assets/css/style.css')
@@ -15,6 +15,7 @@ html(lang='en')
       .side-image-content
         h4 #{dates}
         h1 #{tagline}
+        p #{blurb}
     .container
       #timeline
         // Timeline begin here
@@ -23,8 +24,13 @@ html(lang='en')
     .hero
       .hero-inner
         .hero-copy
-          h1 The Hearing Eye
-          p Pure Eye Music
-          iframe(width="560" height="315" src="https://www.youtube.com/embed/zIykwZt5LQE" frameborder="0" allowfullscreen)
-          blockquote.bq
+          p #{quote}
     include ./_includes/footer.jade
+    script(src=src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
+    script(src="assets/js/wow.min.js")
+    script.
+      new WOW().init();
+    script.
+      $(document).ready(function(){
+        $('.timeline-item').not(":first").addClass('wow fadeInUp').attr('data-wow-duration', '1.35s').attr('data-wow-delay','.25s');
+      })

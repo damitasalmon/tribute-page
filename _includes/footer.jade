@@ -5,14 +5,14 @@ footer.footer-2(role='contentinfo')
     li
       a(href='#{about}') About
     li
-      a(href='/credits.html') Credits
+      a(href='pages/credits.html') Credits
     li
-      a(href='/credits.html') Further Reading
+      a(href='pages/credits.html' rel='tab2') Further Reading
   .footer-secondary-links
     ul
       li
-        a(href='javascript:void(0)') Copyright &copy; #{new Date().getFullYear()} 
-        a(href='https://www.freecodecamp.com/omgninjas') Sentimental Graffiti
+        a(href='javascript:void(0)')
+          +copyr('Sentimental Graffit', 'https://www.freecodecamp.com/omgninjas')
     ul.footer-social
       li
         a(href='javascript:void(0)')
