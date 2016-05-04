@@ -11,11 +11,15 @@ mixin timeline-item(title, icon, href, linktxt)
                 block
             else
                 p See Link for Addintional Information
-            if (linktxt)
+            if (href)
+                a.btn(href="#{href}" target="_blank") Read More
+            if (href && linktxt)
                 a.btn(href="#{href}" target="_blank") #{linktxt}
 
+
+
 mixin copyr(whois, link)
-    p Copyright &copy; #{new Date().getFullYear()}&nbsp;
+    p Copyright &copy; #{new Date().getFullYear()}&nbsp&nbsp;
         if link
             a(href='#{link}') #{whois}
         else

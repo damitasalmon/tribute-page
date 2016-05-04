@@ -3,17 +3,13 @@ footer.footer-2(role='contentinfo')
     img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png', alt='Logo image')
   ul
     li
-      a(href='#{about}') About
+      a(href='#{about}' target="_blank") About
     li
-      a(href='pages/credits.html') Credits
-    li
-      a(href='pages/credits.html' rel='tab2') Further Reading
+      a(href='credits.html' target="_blank") Further Reading
   .footer-secondary-links
-    ul
-      li
-        a(href='javascript:void(0)')
-          +copyr('Sentimental Graffit', 'https://www.freecodecamp.com/omgninjas')
     ul.footer-social
+      li  
+        +copyr('Sentimental Graffit', 'https://www.freecodecamp.com/omgninjas')
       li
         a(href='javascript:void(0)')
           i.fa.fa-twitter
