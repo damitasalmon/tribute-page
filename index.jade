@@ -5,17 +5,19 @@ html(lang='en')
     meta(charset='UTF-8')
     title #{shortname} #{title}
     meta(name='viewport', content='width=device-width, minimum-scale= 1.0, initial-scale= 1.0')
+    link(rel="icon" type="image/x-icon" href="assets/img/favicon.ico")
+
     // stylesheets
     link(rel='stylesheet', href='assets/css/style.css')
   body
-    include ./_includes/mixins.jade 
-    include ./_includes/header.jade 
+    include ./_includes/mixins 
+    include ./_includes/header
     .side-image
       .images-wrapper
       .side-image-content
         h4 #{dates}
-        h1 #{tagline}
-        p #{blurb}
+        h1 #{tagline.toUpperCase()}
+        p !{blurb}
     .container
       #timeline
         // Timeline begin here
@@ -24,7 +26,8 @@ html(lang='en')
     .hero
       .hero-inner
         .hero-copy
-          p #{quote}
+          p #{quote.quote} <br/>
+            span #{quote.cite}
     include ./_includes/footer.jade
     script(src=src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
     script(src="assets/js/wow.min.js")

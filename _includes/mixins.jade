@@ -19,7 +19,7 @@ mixin timeline-item(title, icon, href, linktxt)
 
 
 mixin copyr(whois, link)
-    p Copyright &copy; #{new Date().getFullYear()}&nbsp&nbsp;
+    p Copyright &copy; #{new Date().getFullYear()}&nbsp;&nbsp;
         if link
             a(href='#{link}') #{whois}
         else
