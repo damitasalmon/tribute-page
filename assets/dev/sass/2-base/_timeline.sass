@@ -1,0 +1,94 @@
+*, *:before, *:after 
+
+#timeline 
+	line-height: 1.5em
+	font-size: 14px
+	width: 90%
+	margin: 30px auto 0
+	position: relative
+	+transition(all .4s ease)
+	&:before 
+		content: ""
+		width: 3px
+		height: 100%
+		background: $timeline-color
+		left: 50%
+		top: 0
+		position: absolute
+	&:after 
+		content: ""
+		clear: both
+		display: table
+		width: 100%
+	.timeline-item 
+		margin-bottom: 50px
+		position: relative
+		@extend %clearfix
+		.timeline-icon 
+			text-align: center
+			background: $timeline-color
+			width: 50px
+			height: 50px
+			position: absolute
+			top: 0
+			left: 50%
+			overflow: hidden
+			margin-left: -23px
+			+prefix(border-radius, 50%)
+			> i 
+				color: #fff
+				font-size: 25px
+				line-height: 25px
+				margin-top: 25%
+		.timeline-content 
+			width: 45%
+			background: #fff
+			padding: 20px
+			+prefix(box-shadow, 0 3px 0 rgba(0,0,0,0.1))
+			+prefix(border-radius, 5px)
+			+transition(all .3s ease)
+			h2 
+				padding: 15px
+				background: $timeline-color
+				color: #fff
+				margin: -20px -20px 0 -20px
+				font-weight: 500
+				font-family: $secondary-font
+				+border-top-radius(3px)
+			&:before 
+				content: ''
+				position: absolute
+				left: 45%
+				top: 20px
+				width: 0 
+				height: 0 
+				border-top: 7px solid transparent
+				border-bottom: 7px solid transparent 
+				border-left: 7px solid $timeline-color 
+	.timeline-item:nth-of-type(odd) .timeline-content
+		float: right
+		&:before 
+			content: ''
+			right: 45%
+			left: inherit
+			border-left: 0
+			border-right: 7px solid $timeline-color
+	
+					
+@media screen and (max-width: 768px) 
+	#timeline 
+		margin: 30px auto 0
+		padding: 0
+		&:before 
+			left: 0
+		.timeline-item 
+			.timeline-content 
+				width: 90%
+				float: right
+				&:before, &:before:nth-child(even)
+					left: 10%
+					margin-left: -6px
+					border-left: 0
+					border-right: 7px solid $timeline-color
+			.timeline-icon 
+				left: 0

@@ -1,0 +1,101 @@
+.side-image
+  $base-line-height: 1.5em !default
+  $action-color: #477dca !default
+  $dark-gray: #333333 !default
+  $large-screen: 53.75em !default
+  $base-font-color: $dark-gray !default
+  $side-image-background-top: #b5ebeb
+  $side-image-background-bottom: #5dac5d
+  $side-image-content-background: #f9f9f9
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%)
+  background: $side-image-content-background
+  +media($large-screen)
+    +row(table)
+  .images-wrapper
+    background: url("../img/percy-julian.jpg"), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll
+    background-color: $side-image-background-top
+    background-size: cover
+    border-bottom: $side-image-border
+    display: block
+    min-height: 12em
+    padding: 3em
+    +media($large-screen)
+      +span-columns(4)
+      background-position: top
+      background-size: cover
+      border-right: $side-image-border
+  .side-image-content
+    +span-columns(12)
+    padding: 1em 1em 4em 1em
+    border-top: 1px solid $darkest 
+    border-bottom: 2px solid $darkest 
+    +media($large-screen)
+      +span-columns(8)
+      padding: 4em 4em 8em 4em
+
+    h1
+      margin-bottom: 0.9em
+      font-family: 'Forum'
+    h4
+      
+      background: $timeline-color
+      color: white
+      font-family: $secondary-font
+      display: inline-block
+      font-size: 1.15em
+      margin-bottom: 1.3em
+      padding: 3px 8px
+      text-transform: uppercase
+      letter-spacing: 0.02em
+    p
+      color: $base-font-color
+      line-height: $base-line-height
+      margin-bottom: 3em
+      text-align: justify
+  +reset-display
+  
+  //Hero Content
+$refills-max-width: 68em
+$base-border-radius: 3px !default
+$action-color: #477dca !default
+$large-screen: 53.75em !default
+$hero-background-top: #7f99be
+$hero-background-bottom: #20392b
+$gradient-angle: 10deg
+$hero-image: "../img/wg_blur6.jpg"
+.hero
+  background: url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll
+  background-color: #324766
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  .hero-logo img
+    height: 4em
+    margin-bottom: 1em
+  .hero-inner
+    +outer-container($refills-max-width)
+    +clearfix
+    margin: auto
+    padding: 3.5em
+    text-align: center
+    .hero-copy
+      text-align: justify
+      padding-bottom: 
+      h1
+        color: $hero-color
+        font-size: 1.6em
+        margin-bottom: 0.5em
+        +media($large-screen)
+          font-size: 1.8em
+      p
+        color: $hero-color
+        font-family: $secondary-font
+        margin: 0 auto
+        +media($large-screen)
+          font-size: 1.4em
+          line-height: 1.4em
+          max-width: 55%
+        span
+          padding: 22px 0 0 190px
+          
+

@@ -1,0 +1,23 @@
+header
+	background: $secondary-color
+	padding: 10px
+	box-shadow: 0 3px 3px rgba(0,0,0,0.05)
+	@extend %clearfix
+	.logo 
+		float: left
+		font:
+			family: $base-font-title
+			size: 26px
+		> span 
+			color: lighten($primary-color, 20%)
+			font-weight: 500
+			text-transform: uppercase
+		> span:nth-child(even)
+		    @extend span
+		    color: $primary-color
+	.social
+		float: right
+		.btn
+			font-family: $title-font
+			font-size: 16px
+			margin: 10px 5px
