@@ -1,18 +1,22 @@
 {
-  "name": "Timeline",
+  "name": "tribute-page",
   "version": "1.0.1",
   "description": "Responsive timeline",
-  "repository": "https://github.com/brunodsgn/responsive-timeline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omgninjas/percyjulian-tribute.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Bruno Rodrigues",
+  "author": "Damita Salmon",
   "license": "MIT",
   "devDependencies": {
-    "compass": "^0.1.0",
-    "del": "^0.1.3",
-    "gulp": "^3.8.10",
-    "gulp-imagemin": "^2.0.0",
-    "gulp-ruby-sass": "^0.7.1"
-  }
+
+  },
+  "bugs": {
+    "url": "https://github.com/omgninjas/percyjulian-tribute/issues"
+  },
+  "homepage": "https://github.com/omgninjas/percyjulian-tribute#readme",
+  "main": "index.js"
 }
