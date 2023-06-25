@@ -1,4 +1,4 @@
-# [Tribuite Page](http://www.freecodecamp.com/challenges/build-a-tribute-page)
+# Tribute Page
 
 ## Project Description
 
@@ -17,3 +17,5 @@ This project is a part of [FreeCodecamp](https://freecodecamp.com)'s Basic Frond
 * [Sass](http://sass-lang.com/)
 * [Cloud 9 IDE](https://c9.io/)
 * Based on [this responsive timeline](http://codepen.io/brunodsgn/pen/KwarLp), by Bruno Rodriguez, (thanks Bruno!).
+
+View [Demo](https://codepen.io/iruldanet/pen/NjYORG)
