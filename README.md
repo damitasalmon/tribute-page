@@ -1,6 +1,6 @@
-#[Tribuite Page](http://www.freecodecamp.com/challenges/build-a-tribute-page)
+# [Tribuite Page](http://www.freecodecamp.com/challenges/build-a-tribute-page)
 
-##Project Description
+## Project Description
 
 This project is a part of [FreeCodecamp](https://freecodecamp.com)'s Basic Frond End Development project challenges. 
 
@@ -11,7 +11,7 @@ This project is a part of [FreeCodecamp](https://freecodecamp.com)'s Basic Frond
 * **User Story:** I can view a tribute page with an image and text.
 * **User Story:** I can click on a link that will take me to an external website with further information on the topic.
 
-###Credits
+### Credits
 * [Bourbon](http://bourbon.io/), [Bitters](http://bitters.bourbon.io/), & [Refills](http://refills.bourbon.io/)
 * [Jade](http://jade-lang.com/)
 * [Sass](http://sass-lang.com/)
